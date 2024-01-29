@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user ="ishika"
+        let pass =1234
+       
+        let input=prompt("Enter Your Name");
+        let password=parseInt(prompt("Enter Your Password"));
+
+        if(user===input)
+        {
+            if(pass===password)
+            {
+                console.log("You Are Login Successfully");
+                let maths=parseInt(prompt("Enter Your Maths Marks"));
+                let scince=parseInt(prompt("Enter Your scince Marks"));
+                let social_scince=parseInt(prompt("Enter Your social-scince Marks"));
+                let Drawing=parseInt(prompt("Enter Your Drawing Marks"));
+
+                let total;
+                total=maths+scince+social_scince+Drawing;
+                console.log(total);
+                let per;
+                per=total/4;
+                console.log("pertantange = ",per);
+
+                if(per>90)
+                {
+                    console.log("Grade = A++");
+                    
+                }else if(per<=90 && per>80){
+                    console.log("Grade = A");
+
+                }else if(per<=80 && per>70){
+                    console.log("Grade = B++");
+
+                }else if(per<=70 && per>60){
+                    console.log("Grade B");
+
+                }else if(per<=60 && per>50){
+                    console.log("Grade = c++");
+
+                }else if(per<=50 && per>40){
+                    console.log("Grade = c");
+
+                }else{
+                    console.log("fail");
+                }
+            }else{
+                console.log("Your Password Is Invalid");
+            }
+        }else{
+            console.log("invalid");
+        }
+    </script> 
+</body>
+</html>
